@@ -1,5 +1,5 @@
 # Pull base image.
-FROM spy86/python
+FROM python:latest
 
 # Install Celery.
 RUN pip install celery
