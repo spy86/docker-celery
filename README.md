@@ -1,4 +1,17 @@
 # Docker Celery container
+[![docker-celery](https://img.shields.io/badge/spy86-celery-blue.svg)](https://cloud.docker.com/repository/docker/spy86/celery) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## What is Celery
+Celery is an open source asynchronous job queue / job queue based on the forwarding of distributed messages. It focuses on real-time operation, but also supports scheduling.
 
-[![docker-celery](https://img.shields.io/badge/spy86-celery-blue.svg)](https://cloud.docker.com/repository/docker/spy86/celery) [![Build Status](https://travis-ci.org/spy86/docker-celery.svg?branch=master)](https://travis-ci.org/spy86/docker-celery)
+## How to use
+
+### Celery worker (RabbitMQ Broker)
+```
+docker run --link rabbit:rabbit --name celery -d spy86/celery:latest
+```
+
+### Celery worker (Redis Broker)
+```
+docker run --link redis:redis -e CELERY_BROKER_URL=redis://redis --name celery -d spy86/celery:latest
+```
