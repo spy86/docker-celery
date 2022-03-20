@@ -1,7 +1,5 @@
 # Docker Celery container
-
-
-[![docker-celery](https://img.shields.io/badge/spy86-celery-blue.svg)](https://cloud.docker.com/repository/docker/spy86/celery)
+[![docker-celery](https://img.shields.io/badge/spy86-celery-blue.svg)](https://cloud.docker.com/repository/docker/spy86/celery) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is Celery
 Celery is an open source asynchronous job queue / job queue based on the forwarding of distributed messages. It focuses on real-time operation, but also supports scheduling.
